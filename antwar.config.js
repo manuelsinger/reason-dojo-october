@@ -19,5 +19,6 @@ module.exports = {
     // }),
     "/": page("index.mdx", { title: "Home" }),
     "help": page("help.mdx", { title: "Help" }),
+    "exercise": page("exercise.mdx", {title: "Exercise"}),
   }
 };

@@ -1,0 +1,15 @@
+import Prefetch from "../components/Prefetch.re.js";
+import Interactive from "antwar-interactive";
+
+# hello
+<Interactive id="components/Prefetch.re.js" component={Prefetch} images={["https://upload.wikimedia.org/wikipedia/commons/c/c4/PM5544_with_non-PAL_signals.png", "https://upload.wikimedia.org/wikipedia/commons/6/66/SMPTE_Color_Bars.svg", "https://apod.nasa.gov/apod/image/1810/HyperionGalaxies_ESO_6000.jpg"]} >
+<div> 
+    {
+        ["https://upload.wikimedia.org/wikipedia/commons/c/c4/PM5544_with_non-PAL_signals.png", "https://upload.wikimedia.org/wikipedia/commons/6/66/SMPTE_Color_Bars.svg", "https://apod.nasa.gov/apod/image/1810/HyperionGalaxies_ESO_6000.jpg"].map(
+            url => <img height="100" width="100" src={url} />
+        )
+    } 
+</div>
+
+</Interactive>
+{/* <Prefetch images={["a", "b", "c"]} /> */}

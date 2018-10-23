@@ -33,6 +33,7 @@ let make = (~_location: location, ~file: file, children) => {
       <ul>
         <li> <Link to_="/"> {"Home" |> s} </Link> </li>
         <li> <Link to_="/help"> {"Help" |> s} </Link> </li>
+        <li> <Link to_="/exercise"> {"Exercise" |> s} </Link> </li>
       </ul>
       children
     </>;
